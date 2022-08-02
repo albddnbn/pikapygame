@@ -1,0 +1,98 @@
+this list was started on July 26, 2021 ------------------------------------------>
+                              * newest entries go at top of file *
+-----------------------------------------------------------------------------------------------------------------------
+UPDATE - IT'S TECHNICALLY WORKING - BUT ANGLE ISN'T BEING CALCULATED CORRECTLY IT LOOKS LIKE - SO WORK ON THAT, WITH THE
+NEGATIVE VALUES AND STUFF - GOTTA FIGURE THAT OUT
+**Aug. 18th - I think I have to add pikachu's rect as an argument to the update() function of blastoise, and then transfer
+it to the update() function of hydropump, and use it and the enemy's rect to calculate an angle
+-----------------------------------------------------------------------------------------------------------------------
+**AUG. 17th - Blastoise's attack will be like this:
+      1. Hydropump will be timed - but with degree of randomness - it'll start every 3-4 secs, shutdown after
+         2 secs or so (however long it was before)
+      2. Hydropump will also be used when pikachu gets within a certain distance of the enemy (MIGHT IMPLEMENT THIS LATER)
+
+      3. Bite attack will be implemented when pikachu gets right next to enemy, but with a small degree of randomness
+         to allow pikachu maybe like 1/10 to 1/2 a second to get away
+
+      4, ******************LOOK OVER THE ERROR I'M GETTING RIGHT NOW **********************************************
+-----------------------------------------------------------------------------------------------------------------------
+**FOR NOW - with the close combat belly bump attack - we're just going to have an instance variable - and if pikachu
+            sprite hits the enemy sprite while the enemy isn't already doing hydropump, it will trigger blastoise to do
+            a belly bump which will hopefully be able to both DO DMG, and also BUMP PIKACHU backwards 100 px or so.                              
+-----------------------------------------------------------------------------------------------------------------------
+**August 15th - JUST LEFT OFF HERE --> I JUST ADDED THE 3 LINES THAT LOAD THE PICTURES IN FOR BLASTOISE'S BELLY BUMP
+                ATTACK. NEED TO FIGURE OUT HOW TO IMPLEMENT THIS NEW/ADDITIONAL ATTACK.
+------------------------------------------------------------------------------------------------------------------------
+**PLAN FOR IMPROVING THE ENEMY'S ATTACK TO MAKE IT MORE DIFFICULT FOR PIKACHU TO EVADE**********************************
+
+   1. enemy needs to 'sense' when pikachu is near, and then attack - *possibly also even direct attack in direction
+      that pikachu is in (other than just left/right)
+
+   2. different enemy attacks?
+      a. maybe a burst attack - in a small circle around enemy - blast of water in all directions
+
+      b. enemy jumps
+
+**STEPS I've taken in changing Blastoise's attack from timed to sensed:
+   1.  senses when pikachu is within range (currently 175 - set in settings)
+
+* pikachu can land on top of enemy, get pushed off platform by enemy
+
+------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+Aug. 13th - TO DO:
+   1. If pikachu hits the enemy - don't have him go 'through' the enemy, make the enemy push him or w/e, you know what I mean
+   2. verify that hydropump.hitbox_rect works correctly
+   3. perfect the blastoise attack sequence
+   4. modify blastoise attack - so he shoots if pikachu comes close
+=====================================================================================================
+Aug. 4th - POSSIBLY MAKE SOMETHING WHERE IF YOU PRESS 'W', THEN IT ONLY CREATES ONE INSTANCE OF SHOCK,
+           ADDS IT TO SHOCK GROUP, ETC. ETC. INSTEAD OF WHAT IT IS NOW - i THINK IT'S CREATING A SHIT-TON
+           OF SHOCK SPRITES WHICH ISN'T NECESSARY. -+-+-+-+-+-+>>>>>>>>>> THINK I FIXED THIS!!*!*!**! (5TH)
+*****************************************************************************************************
+Aug. 3rd - NEED TO GET THE BEAT LEVEL THING WORKING 
+=====================================================================================================
+Jul 31 - run right and hit left side of platform, run left away from platform, then try to run right again,
+         you can't - FIX THIS.
+=====================================================================================================
+Jul 30 - NEXT THINGS TO DO/FIX:
+   1. WHEN PIKACHU DIES IT RESTARTS - BUT IT'S NOT WORKING LIKE IT SHOULD - NEEDS TO COUNTDOWN again
+   NEEDS TO DO OTHER STUFF - FIX IT
+
+   2. EVENTUALY - MAKE IT SO PIKACHU WILL FALL OFF A PLATFORM DIFFERENTLY - EXAMPLE, RIGHT NOW
+   IF HES FACING LEFT, AND WALKS OFF LEFT SIDE OF PLATFORM - HE DOESN'T START FALLING UNTIL HIS TAIL
+   IS ALL THE WAY OFF THE PLATFORM - BECAUSE WE USE PIKA_RECT.RIGHT AND PLATF_RECT.LEFT TO DO 
+   PLATFORM EDGES/FALLING - JUST A MATTER OF CHANGING SOME NUMBERS.
+
+=====================================================================================================
+
+~ JUL 27TH
+Bug List (from Casey Inco):
+1. moving to left seems slower than moving to right
+
+2. pikachu can jump off air - example - if you walk off a platform without jumping,
+   pikachu can still jump
+
+3. if pikachu jumps off something to where his jump animation stops before he hits
+   the ground, he can jump again
+
+4. even when you run out of electricity, if you press 'w' you can still hurt/KILL
+   ENEMIES
+
+5. if you jump when you hit side of platform it snaps you up to the top of the 
+   platform
+
+6. jumping into platform from below shoots pikachu out to the left
+
+7. you can keep running infinitely to the right and lose track of pikachu
+
+8. you can run backwards
+
+***+++---**** NEED TO FIX ALL 8 OF THESE BUGS - THIS LIST IS WHAT i WILL BE WORKING
+              ON UNTIL I FIX all OF THESE Bugs!
+
+=========================================================================================================
+
+Jul 30 - I've fixed most/all of these bugs and also made some other improvements like
+a countdown at the beginning so player has time to get fingers on arrow keys.
+
