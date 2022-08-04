@@ -13,7 +13,7 @@ from power_ups import PowerUp
 from tbolt_shot import TboltShot
 
 # main game class - contains game loop and other important functions
-class PikaMassacre:
+class PikaPy:
     def __init__(self):
         # most important variables:
         pygame.init()
@@ -726,5 +726,5 @@ class PikaMassacre:
 
 
 if __name__=="__main__":
-    pikachu_game = PikaMassacre()
+    pikachu_game = PikaPy()
     pikachu_game.run_game()
