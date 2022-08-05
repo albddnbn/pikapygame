@@ -12,7 +12,15 @@
 
 <pre>python main.py</pre>
 
-<i>Will add more to this...</i>
+<h3>Controls:</h3>
+<ul>
+  <li>Lateral movement is done with the left and right arrow keys</li>
+  <li>Pikachu can jump using the [SPACE] bar</li>
+  <li>electric shock attack - hold 'W'</li>
+  <li>thunderbolt (it's more of a thunder 'ball' actually) - press 'E'</li>
+</ul>
+
+<p>Pikachu has a green health bar, and a blue electricity bar. Using either one of the attacks will gradually deplete Pikachu's electricity
 
 <h3>Questions, comments, concerns?</h3>
 <p>Contributions or constructive criticism are welcome!</p>
