@@ -3,6 +3,7 @@
 <br>
 <br>
 <p>This is a short and simple side scroller game written in Python primarily using the <i>pygame</i> Python library. The game features Pikachu and Blastoise sprites (you can replace any of the images used with other images to change the look of the game). Basic enemy movement / attacks are functional, along with two different kinds of attacks for Pikachu, forward/backward movement, and jumping.</p>
+<p>It was made for a project for a programming class.</p>
 <br>
 <hr>
 
